@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import { useAuth } from "@/hooks/auth";
 
 function MainComponent() {
   const [error, setError] = useState(null);

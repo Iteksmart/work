@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
-
-import { useHandleStreamResponse } from "../utilities/runtime-helpers";
+import React, { useState, useCallback } from "react";
+import { useAuth, useUser } from "@/hooks/auth";
+import { useHandleStreamResponse } from "../../utilities/runtime-helpers";
 
 function MainComponent() {
   const [activeTab, setActiveTab] = useState("dashboard");
